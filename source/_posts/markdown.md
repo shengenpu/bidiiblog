@@ -15,7 +15,7 @@ tags:
 ##### 五级标题
 ```
 效果如下：
-![](/markdown/title.png)
+![](./markdown/title.png)
 例如前面的**前言**二字就是二级标题、前面的**1.标题**就是三级标题。
 ### 2.列表
 #### 2.1无序列表
@@ -164,15 +164,16 @@ text-align：center
 x^2^ x~2~
 ```
 效果如下：
-x^2^ x~2~
+
+![](./markdown/subsup.png)
+
 ### 语法高亮
 ***(不建议使用这个，可使用第3点进行代替)***
 ``` 
 ==www.bidii.com==
 ```
 效果如下：
-
-==www.bidii.love==
+![](/markdown/highlight.png)
 标注：可以在vscode中安装markdown插件，这样就可以实时预览了
 然后像加粗可以快捷键ctrl+b，斜体可以ctrl+i...
 学到这里日常写笔记写博客完全*够用*，如果还想精通markdown更加高级的语法，可以参考[Markdown语法手册](https://markdown.com.cn/)。
