@@ -20,7 +20,6 @@ Typedown 是一款 Windows 下的轻量级 Markdown 编辑器，所见即所得�
 **软件效果：**
 浅色模式
 ![](./typedown/type.png)
-![]()
 暗色模式
 ![](./typedown/down.png)
 设置界面
