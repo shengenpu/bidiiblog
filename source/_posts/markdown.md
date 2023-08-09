@@ -1,7 +1,7 @@
 ---
-title: markdown
+title: markdown语法速过
 date: 2023-08-07 23:32:51
-tags:
+tags: markdown
 ---
 ## 前言
 最近复习了一下markdown语法，发现有的语法忘记了，倒不如索性写一篇博客来记录一下，以后也可以作为备忘录来使用。
