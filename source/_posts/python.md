@@ -42,6 +42,24 @@ python中的注释分为单行注释和多行注释。
 ![](./python/nopig.png)
 举个例子吧，其实和别的语言大差不差，熟悉一下写法即可
 ![](./python/ifsuchas.png)
+match...case...语句
+```python
+def http_error(status):
+    match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 418:
+            return "I'm a teapot"
+        case _:
+            return "Something's wrong with the internet"
+
+mystatus=400
+print(http_error(400))
+```
+case_相当于C语言中的default
+由于我们参数是400，所以返回的是Bad request
 ### 与或非
 在python中与或非分别是and、or、not
 and：与 两个条件都满足才为真
@@ -142,3 +160,116 @@ format(value,format_spec)
 ![](./python/format.png)
 当然format也可以用在格式化输出字典上
 ![](./python/dictfor.png)
+
+### 函数
+函数是python中的一种代码组织形式，函数可以提高代码的复用性，函数可以提高代码的可读性，函数可以提高代码的可维护性。
+没啥好说的，换了种写法**def 函数名（）：代码块**
+![](./python/func.png)
+### 模块
+模块是python中的一种代码组织形式，模块可以提高代码的复用性，模块可以提高代码的可读性，模块可以提高代码的可维护性。
+引入模块的方式有三种,推荐使用第一种
+![](./python/uuu.png)
+
+### 类
+**前提了解：面向对象**
+1. 封装
+我的理解是将一些功能进行打包，使用者进行调用即可，不需要知道里面的具体实现。
+2. 继承
+就是将一些类的共同点提取出来，形成一个父类，然后让其他类继承这个父类，这样就可以减少代码的重复性。
+3. 多态
+多态是指同一种事物的多种形态，例如猫和狗都是动物，但是猫和狗的叫声是不一样的，这就是多态。
+而所说到猫、狗都是子类，动物是父类。猫的叫声和狗的叫声是不一样的，这就是多态。
+#### 类class
+类的基础定义和调用方法。
+__init__()方法是类的构造方法，用于初始化类的属性。
+调用类的属性和方法的方式为：对象.属性名、对象.方法名()。
+类的初始化属性：
+![](./python/classint.png)
+类定义方法：
+方法名随意，同样也有个默认的参数self，self代表类的实例，代表当前对象。
+![](./python/classtwo.png)
+类的综合练习：公司分为全职员工和兼职员工，全职员工包含月薪，兼职员工包含日薪，全职员工和兼职员工都有姓名和工号，都可以打印出姓名和工号，全职员工和兼职员工都有计算工资的方法，全职员工的计算工资方法就是月薪，兼职员工的计算工资方法是日薪*工作天数。
+```python
+class Employee:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    def print_info(self):
+        print(f"姓名：{self.name} 工号：{self.id}")
+        return ""
+
+class FullTime(Employee):
+    def __init__(self,name,id,monthly_salary):
+        super().__init__(name,id)
+        self.monthly_salary=monthly_salary
+    def calculate_monthly_pay(self):
+        self.monthly_salary=self.monthly_salary*0.8
+
+class Stime(Employee):
+    def __init__(self,name,id,daily_salary,work_day):
+        super().__init__(name,id)
+        self.daily_salary=daily_salary
+        self.monthly_salary=0.0
+        self.work_day=work_day
+    def calculate_monthly_pay(self):
+        self.daily_salary=self.daily_salary*0.8
+        self.monthly_salary=self.work_day*self.daily_salary
+pig=FullTime("pig",98,3000)
+cat=Stime("cat",99,105,20)
+print(pig.print_info())
+print(cat.print_info())
+pig.calculate_monthly_pay()
+cat.calculate_monthly_pay()
+print(pig.monthly_salary)
+print(cat.monthly_salary)
+```
+输出:
+```python
+姓名：pig 工号：98
+姓名：cat 工号：99
+2400.0
+1680.0
+```
+### 文件
+open()函数用于打开文件，返回值为文件对象。
+open()函数的语法格式如下：
+```python
+open(file,mode='r',encoding=None)
+```
+file：指定要打开的文件名。
+mode：指定打开文件的模式，默认为'r'，只读模式。
+encoding：指定打开文件的编码方式，默认为None，即使用系统默认的编码方式。
+close()方法用于关闭文件。要注意的是，文件对象在使用完毕后必须关闭，否则会占用系统的资源。
+close()方法的语法格式如下：
+```python
+文件对象.close()
+```
+read()方法用于读取文件中的内容，返回值为字符串类型。
+read()方法的语法格式如下：
+```python
+文件对象.read()
+```
+readline()方法用于读取文件中的一行内容，返回值为字符串类型。
+readline()方法的语法格式如下：
+```python
+文件对象.readline()
+```
+readlines()方法用于读取文件中的所有内容，返回值为列表类型。
+readlines()方法的语法格式如下：
+```python
+文件对象.readlines()
+```
+如果怕忘记写close()方法，可以使用with语句来代替，with语句会自动关闭文件，例如
+![](./python/forget.png)
+write()方法用于向文件中写入内容，返回值为写入的字符数。
+无非就是将上面的”r"改成"w"，然后将read()改成write()，其他的都一样。
+文件方面可参考[菜鸟教程](https://www.runoob.com/python3/python3-file-methods.html)
+因为文件的内容比较多，之前也都学过所以就不一一列举了，有需要的可以去看看。
+### 异常
+try...except...else...finally...语句用于捕获异常。
+![](./python/try.png)
+当然如果你无法预判错误类型也可以直接使用except：。
+else：里面方如果没有错误执行的代码
+finally：里面的代码不管有没有错误都会执行。
+
+*over...只是随记，并没有很系统的学...*
