@@ -56,7 +56,7 @@ date: 2023-04-29 21:42:23
 <div class="bidii" style="display: flex; justify-content: center;">
   <div style="width: 70%; max-width: 320px; margin: 0 auto;">
     <div class="typewriter">
-      <span>hello 我是笔蒂</span>
+      <span>hello I‘m笔蒂</span>
       <span class="cursor"></span>
     </div>
   </div>
