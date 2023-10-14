@@ -1,6 +1,7 @@
 ---
 title: 接入支付服务你一定要知道的小知识
 date: 2023-08-26 09:31:11
+index_img: ./paylike/chaoshan.png
 tags: 支付服务 公钥和私钥 加密
 ---
 ### 1.前言

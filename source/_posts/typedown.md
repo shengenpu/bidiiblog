@@ -1,6 +1,7 @@
 ---
 title: Typedown笔记软件
 date: 2023-05-09 21:30:20
+index_img: ./typedown/store.png
 tags: Typedown笔记软件
 ---
 ### 前言

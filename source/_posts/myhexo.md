@@ -1,6 +1,7 @@
 ---
 title: Hexo搭建博客
 date: 2023-04-23 14:25:04
+index_img: ./myhexo/success.png
 tags: hexo vercel 博客
 ---
 ## 使用Hexo搭建博客

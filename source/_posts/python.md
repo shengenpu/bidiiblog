@@ -1,6 +1,7 @@
 ---
 title: python基础随记
 date: 2023-08-09 18:41:38
+index_img: ./python/create.png
 tags: python基础
 ---
 ## 前言
