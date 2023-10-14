@@ -52,6 +52,8 @@ ok，大概就这么多,如果你有scoop包管理工具的话，可能会更快
     ```
     刷新github界面，变成这样子就算提交成功了
     ![](./myhexo/gitit.png)
+    注： 如果有一个代理，能上github，但是 ``` git push ``` 有Time out的情况，git bash 没有设置代理(忘了设置就是这么傻)
+    参考链接：https://gist.github.com/laispace/666dd7b27e9116faece6
 4. 购买域名，我使用的是万网，因为正式用户可以免费用域名一年
    域名部分我就不多赘述了，网上教程有很多
 5. 使用vercel挂载仓库
