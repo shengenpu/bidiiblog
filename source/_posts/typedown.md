@@ -1,7 +1,7 @@
 ---
 title: Typedown笔记软件
 date: 2023-05-09 21:30:20
-index_img: ./typedown/store.png
+index_img: ../images/./typedown/store.png
 tags: Typedown笔记软件
 ---
 ### 前言
@@ -17,14 +17,14 @@ Typedown 是一款 Windows 下的轻量级 Markdown 编辑器，所见即所得�
 6. 代码块及语法高亮：支持多种编程语言的代码高亮显示
 7. 导出为 HTML 和 PDF：将文档导出为常用格式
 **下载方式**(Microsoft Store搜索即可)：
-![](./typedown/store.png)
+![](../images/./typedown/store.png)
 **软件效果：**
 浅色模式
-![](./typedown/type.png)
+![](../images/./typedown/type.png)
 暗色模式
-![](./typedown/down.png)
+![](../images/./typedown/down.png)
 设置界面
-![](./typedown/setting.png)
+![](../images/./typedown/setting.png)
 笔记软件门槛还是非常低的，只需要熟悉markdown语法即可
 不会markdown语法的可以借助以下教程学习，就是一种书写格式，并不难学
 https://markdown.com.cn/basic-syntax/

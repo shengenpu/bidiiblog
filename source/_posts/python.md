@@ -1,7 +1,7 @@
 ---
 title: python基础随记
 date: 2023-08-09 18:41:38
-index_img: ./python/create.png
+index_img: ../images/./python/create.png
 tags: python基础
 ---
 ## 前言
@@ -10,7 +10,7 @@ tags: python基础
 打开pycharm，点击create new project，然后选择项目的存放路径，然后点击create即可。
 这里解释器我选择的是python3.7，因为我之前安装了python版本是3.7，所以这里就选择3.7了。
 正常不会有啥问题，但要注意给足python的权限，不然会报错（不过正常遇不到）
-![](./python/create.png)
+![](../images/./python/create.png)
 ### 1.变量及数据类型
 *python中的变量不需要声明，直接赋值即可，变量类型也不需要指定，python会自动判断变量类型。*
 比如’a=1’，python会自动判断a为整型（int）。
@@ -33,16 +33,16 @@ type()函数用于查看变量的类型，返回值为变量的类型。
 python中的注释分为单行注释和多行注释。
 单行注释使用#号，多行注释使用三个单引号或者三个双引号。
 **以上五点每门语言都有，我用一个例子全都举例了一下，如下图：**
-![](./python/base.png)
+![](../images/./python/base.png)
 ### 判断语句
-![](./python/if.png)
+![](../images/./python/if.png)
 在python中缩进很重要，因为在python中条件判断并没有用大括号来表示，而是用缩进来表示的，例如：
 错误写法：
-![](./python/pig.png)
+![](../images/./python/pig.png)
 正确写法：
-![](./python/nopig.png)
+![](../images/./python/nopig.png)
 举个例子吧，其实和别的语言大差不差，熟悉一下写法即可
-![](./python/ifsuchas.png)
+![](../images/./python/ifsuchas.png)
 match...case...语句
 ```python
 def http_error(status):
@@ -66,17 +66,17 @@ case_相当于C语言中的default
 and：与 两个条件都满足才为真
 or：或 两个条件满足一个就为真
 not：非 取反
-![](./python/and.png)
+![](../images/./python/and.png)
 可以通过返回的真假和上面的判断语句结合使用
 ### 列表
 列表是python中最常用的数据类型，列表中的元素可以是任意类型，列表中的元素可以是重复的，列表中的元素是有序的。
 基本上大差不差举个例子带过吧~
-![](./python/sb.png)
+![](../images/./python/sb.png)
 ### 字典
 字典是python中的另一种数据类型，字典中的元素是无序的，字典中的元素是键值对的形式存在的，字典中的键是唯一的，字典中的值可以是任意类型，字典中的键是不可变的。
 以下是字典的例子，很像json格式，但是不是json格式，json格式是字符串，而字典是python中的数据类型。
 **字典取值的时候是通过键来取值的，例如dict["小猪"]，这样就可以取到小猪的值了。**
-![](./python/dict.png)
+![](../images/./python/dict.png)
 字典的增删改查
 例如有这样一个字典
 ```python
@@ -107,7 +107,7 @@ ___
 .keys()方法用于返回字典中的所有键，返回值为列表类型。
 .values()方法用于返回字典中的所有值，返回值为列表类型。
 .items()方法用于返回字典中的所有键值对，返回值为列表类型。
-![](./python/a1.png)
+![](../images/./python/a1.png)
 ### 循环语句
 python中的循环语句分为for循环和while循环。
 for循环：用于遍历序列或者集合，例如列表、元组、字典、字符串等。
@@ -148,7 +148,7 @@ while 条件：
     代码块
 ```
 题目：求出所有添加进来的数的平均数
-![](./python/adv.png)
+![](../images/./python/adv.png)
 ### format()函数
 format()函数用于格式化输出，返回值为字符串类型。
 format()函数的语法格式如下：
@@ -156,20 +156,20 @@ format()函数的语法格式如下：
 format(value,format_spec)
 ```
 {}里的数字表示format()函数中的第几个参数，从0开始。
-![](./python/format1.png)
+![](../images/./python/format1.png)
 也可以通过关键字参数来指定参数的位置
-![](./python/format.png)
+![](../images/./python/format.png)
 当然format也可以用在格式化输出字典上
-![](./python/dictfor.png)
+![](../images/./python/dictfor.png)
 
 ### 函数
 函数是python中的一种代码组织形式，函数可以提高代码的复用性，函数可以提高代码的可读性，函数可以提高代码的可维护性。
 没啥好说的，换了种写法**def 函数名（）：代码块**
-![](./python/func.png)
+![](../images/./python/func.png)
 ### 模块
 模块是python中的一种代码组织形式，模块可以提高代码的复用性，模块可以提高代码的可读性，模块可以提高代码的可维护性。
 引入模块的方式有三种,推荐使用第一种
-![](./python/uuu.png)
+![](../images/./python/uuu.png)
 
 ### 类
 **前提了解：面向对象**
@@ -185,10 +185,10 @@ format(value,format_spec)
 __init__()方法是类的构造方法，用于初始化类的属性。
 调用类的属性和方法的方式为：对象.属性名、对象.方法名()。
 类的初始化属性：
-![](./python/classint.png)
+![](../images/./python/classint.png)
 类定义方法：
 方法名随意，同样也有个默认的参数self，self代表类的实例，代表当前对象。
-![](./python/classtwo.png)
+![](../images/./python/classtwo.png)
 类的综合练习：公司分为全职员工和兼职员工，全职员工包含月薪，兼职员工包含日薪，全职员工和兼职员工都有姓名和工号，都可以打印出姓名和工号，全职员工和兼职员工都有计算工资的方法，全职员工的计算工资方法就是月薪，兼职员工的计算工资方法是日薪*工作天数。
 ```python
 class Employee:
@@ -261,14 +261,14 @@ readlines()方法的语法格式如下：
 文件对象.readlines()
 ```
 如果怕忘记写close()方法，可以使用with语句来代替，with语句会自动关闭文件，例如
-![](./python/forget.png)
+![](../images/./python/forget.png)
 write()方法用于向文件中写入内容，返回值为写入的字符数。
 无非就是将上面的”r"改成"w"，然后将read()改成write()，其他的都一样。
 文件方面可参考[菜鸟教程](https://www.runoob.com/python3/python3-file-methods.html)
 因为文件的内容比较多，之前也都学过所以就不一一列举了，有需要的可以去看看。
 ### 异常
 try...except...else...finally...语句用于捕获异常。
-![](./python/try.png)
+![](../images/./python/try.png)
 当然如果你无法预判错误类型也可以直接使用except：。
 else：里面方如果没有错误执行的代码
 finally：里面的代码不管有没有错误都会执行。
