@@ -63,6 +63,7 @@ index_img: ../../images/./springboot/sb.png
 |target|项目名称/target|存放 Maven 构建生成的文件，例如最后生成的项目jar包就在此处|
 |pom.xml|项目名称/pom.xml|maven依赖配置文件|
 |README.md|项目名称/README.md|项目说明文档，存放作者的胡话|
+_
 SRC代码设计结构：我们一般遵循Controller-Service-Dao的设计模式：
 * controller：控制器，负责接收用户请求，并将请求转发到相应的服务层
 * service：服务层，负责业务逻辑处理，调用Dao层
