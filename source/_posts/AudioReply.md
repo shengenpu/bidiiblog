@@ -16,11 +16,11 @@ tags: AudioReply 多设备蓝牙 公用耳机
 ![](../images/./AudioReply/audio.png)
 因为在同一局域网，软件自动检测到了（如果检测不到可以软件也提供了IP连接）
 点击连接即可，手机选择播放器，电脑选择服务器。
-* 电脑端配置：
+* 电脑端的配置：
     配置输出音频，这里建议选择Virtual Speakers
     ![](../images/./AudioReply/a.png)
     ![](../images/./AudioReply/b.png)
-* 手机端配置：
+* 手机端的配置：
     配置输出音频，这里建议选择AutioTrack,上面的试了下虽然说是低延迟，但是音频会偶尔卡顿，下面的就很流畅丝滑了...
     ![](../images/./AudioReply/t.png)
     ![](../images/./AudioReply/k.png)
