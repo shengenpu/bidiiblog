@@ -10,7 +10,7 @@ tags: AudioReply 多设备蓝牙 公用耳机
 #### 使用方法
 首先需要同时在手机电脑上同时拥有此软件，并且手机和电脑在同一局域网
 1. PC端下载地址：[AudioReply](https://audiorelay.net/)
-   手机可以在谷歌商店下载......
+   手机可以在谷歌商店下载...
    ![](../images/./AudioReply/s.png)
 2. 电脑端手机端打开如下：
 ![](../images/./AudioReply/audio.png)
